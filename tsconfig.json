@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "types": ["node"],
+        "lib": ["esnext", "dom"],
+        "module": "ESNEXT",
+        "declaration": true,
+        "declarationMap": false,
+        "sourceMap": false,
+        "outDir": "./dist",
+        "strict": true,
+        "noImplicitAny": false,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "allowJs": true,
+        "typeRoots": [
+            "typings"
+        ],
+        "esModuleInterop": true,
+        "inlineSourceMap": true,
+        "inlineSources": false,
+    },
+    "include": [ "src/**/*", "typings/**/*" ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "file-picker",
+  "version": "1.0.0",
+  "description": "A file-picker project",
+  "scripts": {
+    "clean": "del dist",
+    "dev": "npm run clean && tsc && concurrently \"npm:dev:*\"",
+    "dev:umd": "microbundle watch --format umd --name FilePicker --external none --generateTypes",
+    "dev:esm": "microbundle watch --format esm --no-compress --generateTypes",
+    "dev:cjs": "microbundle watch --format cjs --no-compress --generateTypes",
+    "build": "npm run clean && tsc && concurrently \"npm:build:*\"",
+    "build:umd": "microbundle build --format umd --name FilePicker --external none --generateTypes",
+    "build:esm": "microbundle build --format esm --no-compress --generateTypes",
+    "build:cjs": "microbundle build --format cjs --no-compress --generateTypes"
+  },
+  "keywords": [
+    "file-picker"
+  ],
+  "author": "shexj",
+  "license": "ISC",
+  "dependencies": {
+    "@types/blueimp-load-image": "^5.16.1",
+    "@types/node": "^18.15.13",
+    "@vue/runtime-dom": "^3.2.47",
+    "blueimp-load-image": "^5.16.0",
+    "concurrently": "^8.0.1",
+    "del-cli": "^5.0.0",
+    "extend": "^3.0.2",
+    "microbundle": "^0.15.1",
+    "typescript": "^5.0.4",
+    "vue": "^3.2.47"
+  },
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/index.esm.js"
+}
