@@ -1,5 +1,5 @@
 {
-  "name": "file-picker",
+  "name": "@shexj/file-picker",
   "version": "1.0.0",
   "description": "A file-picker project",
   "scripts": {
