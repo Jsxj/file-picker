@@ -1,7 +1,11 @@
 {
   "name": "@shexj/file-picker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A file-picker project",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jsxj/file-picker"
+  },
   "scripts": {
     "clean": "del dist",
     "dev": "npm run clean && tsc && concurrently \"npm:dev:*\"",
