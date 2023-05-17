@@ -18,7 +18,12 @@
     "build:cjs": "microbundle build --format cjs --no-compress --generateTypes"
   },
   "keywords": [
-    "file-picker"
+    "file-picker",
+    "file",
+    "file-selector",
+    "select",
+    "file-input",
+    "choose file"
   ],
   "author": "shexj",
   "license": "ISC",
