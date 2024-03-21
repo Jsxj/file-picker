@@ -130,7 +130,6 @@ class FilePicker {
             wx: (/micromessenger/i).test(window.navigator.userAgent),
             ios: (/iPhone OS/i).test(window.navigator.userAgent)
         }
-        alert(this.ua.wx)
         if (!this.ua.wx) {
             this.inputEl = createFileInput(this.options)
         }
